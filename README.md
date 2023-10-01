@@ -1,4 +1,4 @@
-# argo-test
+# argocd-tests
 
 This repository is to summarize what I've learned on this video tutorial for ArgoCD: https://www.youtube.com/watch?v=MeU5_k9ssrs&list=WL&index=2
 
