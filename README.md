@@ -86,3 +86,16 @@ After I save that `deployment.yaml` file, ArgoCD updates and then rollbacks, whi
     automated:
       selfHeal: true
 ```
+
+I can check which deployments are for each namespace with this command
+
+```
+kubectl get deployments -n myapp
+```
+
+Response
+
+```
+NAME      READY   UP-TO-DATE   AVAILABLE   AGE
+mau-app   3/3     3            3           3m48s
+```
