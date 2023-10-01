@@ -71,3 +71,18 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 ```
 
 You can change and delete init password.
+
+### Testing ArgoCD Self Healing
+
+Edit and apply the deployment
+
+```
+kubectl edit deployment -n myapp myapp
+```
+
+After I save that `deployment.yaml` file, ArgoCD updates and then rollbacks, which is what we are expecting.
+
+```
+    automated:
+      selfHeal: true
+```
